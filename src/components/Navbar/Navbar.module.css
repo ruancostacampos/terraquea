@@ -1,0 +1,110 @@
+body{
+  --primary: #44533C;
+}
+
+.container{
+  display: flex;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  height: 92px;
+  align-items:  center;
+  padding-left: 30px;
+  background-color: white;
+}
+
+.containerLinks{
+  padding: 0 20px 0 54px;
+}
+
+.containerLinks ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 42px;
+}
+
+.containerLinks a{
+  color: var(--primary);
+  font-family: "Helvetica Neue Light", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  text-decoration: none;
+  transform: scaleX(0);
+}
+
+.containerLinks a::after{
+  display: block;
+  content: '';
+  border-bottom: 1px solid var(--primary);
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.containerLinks a:hover::after{
+  transform: scaleX(1);
+}
+
+.mobileMenu{
+  display: hidden;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.mobileMenu:hover .menuLineReduced{
+  width: 18px !important;
+}
+
+.mobileMenu span{
+  background-color: var(--primary);
+  width: 18px;
+  height: 1px;
+  transition: width 250ms ease-in-out;
+}
+
+.menuLineReduced{
+  width: 15px !important;
+}
+
+.logo{
+  font-family: 'Sagitha';
+  font-size: 40px;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+  .container{
+    justify-content: space-around;
+  }
+
+  .mobileMenu{
+    display: flex;
+    position: absolute;
+    left: 15px;
+  }
+  
+  .containerLinks{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 569px){
+  .mobileMenuContainerShow{
+    transform: translate(-320px);
+  }
+}
+
+/* Para celulares e tablets com a tela deitada */
+@media only screen and (max-height: 340px) {
+  .container{
+    height: 65px;
+  }
+}
+

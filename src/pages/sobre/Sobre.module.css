@@ -1,0 +1,9 @@
+.sobreContainer {
+    display: flex;
+    /* min-height: calc(100% - 162px); */
+    min-height: 100%;
+    height: 100%;
+    /*background-image: url("../../assets/images/leafbackground.png");*/
+    background-size: cover;
+}
+
