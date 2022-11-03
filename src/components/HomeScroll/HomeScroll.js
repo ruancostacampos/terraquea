@@ -14,8 +14,6 @@ const HomeScroll = () => {
     
     if( (window.innerHeight + window.scrollY) >= document.body.scrollHeight - 1){
       setIsAtEnd(true)
-      console.log('estou no fim')
-      
     }else{
       setIsAtEnd(false)
     }
@@ -34,14 +32,14 @@ const HomeScroll = () => {
       return "#sabonete"
     }
 
-    if( section >= 2 && section < 2.03 ){
+    if( section >= 2 && section < 2.039 ){
       setIsAtEnd(true)
       return "#footer"
     }
 
-    if( section >= 2.031 && section < 4 ){
-      //setIsAtEnd(false)
-      //return "#navbar"
+    if( section >= 2.039 && section < 4 ){
+      setIsAtEnd(false)
+      return "#navbar"
     }
     
   }

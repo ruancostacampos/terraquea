@@ -11,7 +11,7 @@ const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nu
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
-        <HomeScroll />
+        <HomeScroll/>
         <HomeIntro/>
         <section id="demaquilante">
           <Product 

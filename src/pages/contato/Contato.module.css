@@ -49,6 +49,7 @@
     font-size: 1.5rem;
     color: var(--primary);
     line-height: 3rem;
+    text-align: center;
 }
 
 .contatoCard a:hover {
@@ -58,7 +59,7 @@
 .contatoCard p {
     line-height: normal;
     margin: 0;
-    text-align: left;
+    text-align: center;
     font-family: 'Helvetica Neue Light', sans-serif;
     font-weight: 500;
     color: var(--primary);

@@ -27,7 +27,10 @@ const Footer = () => {
     
     setTimeout(()=>{
       verifyContentSize();
-    }, 20)
+    }, 30)
+
+    window.addEventListener('resize', verifyContentSize)
+    console.log('i run')
 
   }, [location])
 
