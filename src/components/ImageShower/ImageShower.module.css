@@ -1,0 +1,52 @@
+
+.imageShower {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+
+    .imageShower {
+        width: 50%;
+        max-height: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1080px) {
+
+    .imageShower {
+        width: 50%;
+        max-height: 100%;
+    }
+    
+}
+
+.currentShowing {
+    min-height: 500px;
+    max-width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.miniatureContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.miniature {
+    width: 80px;
+    background-color: white;
+    border: solid 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.miniature:hover {
+   transform: scale(1.2);
+}

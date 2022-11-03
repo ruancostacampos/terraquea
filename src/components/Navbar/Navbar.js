@@ -43,6 +43,9 @@ const toggleMenu = () => {
           <li>
             <Link to="/sobre">Sobre</Link>
           </li>
+          <li>
+            <Link to="/detalhes">Detalhes</Link>
+          </li>
         </ul>
       </nav>
       

@@ -35,8 +35,6 @@ const Footer = () => {
   }, [location])
 
 
-  // !largeContent ? styles.container : styles.container + ' ' + styles.nofixed
-
   return (
 
     

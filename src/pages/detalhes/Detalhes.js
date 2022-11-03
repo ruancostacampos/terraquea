@@ -1,23 +1,37 @@
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+import ImageShower from '../../components/ImageShower/ImageShower'
 import styles from './Detalhes.module.css'
+
 
 const Detalhes = () => {
 
-    const images = [{url: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                     caption: 'Foto do produto 1'}];
+    const images = ['https://images.pexels.com/photos/2183972/pexels-photo-2183972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                    'https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                    'https://images.pexels.com/photos/2920225/pexels-photo-2920225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                'http://localhost:3000/static/media/demaquilante.73d0ffbec291572e3a27.png']
 
     return (
         <div className={styles.detalhesContainer}>
-            <Slide>
-                {images.map((item, index) => (
-                    <div className='each-slide' key={index}>
-                        <div style={{'backgroundImage': `url(${item.url})`}}>
-                            <span>{item.caption}</span>
-                        </div>
-                    </div>
-                ))}
-            </Slide>
+
+            <div className={styles.detalhesSubContainer}>
+                <span className={styles.stock}>Em estoque</span>
+                <h2>Sabonete</h2>
+                <p className={styles.price}>R$29,90</p>
+                <div className={styles.divider}></div>
+
+                <div className={styles.detailsInfoText}>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia laoreet mattis. Vivamus sodales quam sed sagittis tempor. Donec vulputate ipsum at sodales euismod. Vestibulum eleifend interdum sollicitudin. Integer consequat nisl et tincidunt consequat. Phasellus euismod, arcu tincidunt ullamcorper consequat, urna quam finibus enim, ut vehicula arcu dui eget eros. Duis interdum mollis mauris, vitae varius est feugiat et. Mauris vitae aliquet diam, ut gravida quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ac mauris molestie, venenatis leo non, tincidunt lorem.
+                    </p>
+                </div>
+
+                <div className={styles.divider}></div>
+
+                <button>Quero o meu!</button>
+            </div>
+
+            <ImageShower images={images}/>
+
+
         </div>
 
     )
