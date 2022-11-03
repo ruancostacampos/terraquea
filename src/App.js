@@ -10,6 +10,7 @@ import Home from './pages/home/Home'
 import Sobre from './pages/sobre/Sobre'
 import Contato from './pages/contato/Contato'
 import Footer from './components/Footer/Footer'
+import Detalhes from './pages/detalhes/Detalhes'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/sobre" element={<Sobre/>} />
             <Route path="/contato" element={<Contato/>} />
+            <Route path="/detalhes" element={<Detalhes/>} />
           </Routes>
         <Footer/>
       </BrowserRouter>
