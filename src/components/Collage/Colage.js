@@ -8,18 +8,22 @@ import ScaleY from '../Animations/ScaleY'
 const Colage = (props) => {
 
   const [index, setIndex] = useState(0)
-  const images = props.images;
+  images = props.images;
 
   // Faz a mudança de images durante um período de tempo
   useEffect( () => {
     //Delay para transição das imagens
     setTimeout( () => {
       
-      if(index < images.length - 1){
-        setIndex(index + 1)
-      }else{
-        setIndex(0)
-      }
+      try{
+        
+        if(index < images.length - 1){
+          setIndex(index + 1)
+        }else{
+          setIndex(0)
+        }
+      
+      }catch(ex){}
 
     }, 4000) 
 
