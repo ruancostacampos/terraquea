@@ -10,8 +10,7 @@ export const ScaleY = (props) => {
         style={{display: "flex", 
                 minHeight: "calc(100% - 162px)", 
                 alignItems: "center", 
-                justifyContent: "space-around",
-                maxWidth: 'calc(100vw - 20px)'}}
+                justifyContent: "space-around"}}
       >
     {props.children}
    </motion.div>

@@ -24,9 +24,7 @@
         font-size: 3.5vw !important;
     }
 
-    .detalhesContainer button {
-        max-width: 80% !important;
-    }
+
     
 }
 
@@ -89,8 +87,15 @@
     background-color: rgb(170, 218, 170);
 }
 
-.centralize {
-    display: flex;
+.centralizeButton button {
+    width: 40%;
+}
+
+
+.centralizeButton a {
     justify-content: space-around;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
 }
 

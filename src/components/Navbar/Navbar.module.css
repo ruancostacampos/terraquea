@@ -113,7 +113,7 @@ body{
   display: none;
   flex-direction: column;
   position: fixed;
-  background-color: rgb(241, 241, 241);
+  background-color: white;
   gap: 5px;
   color: var(--primary);
   font-family: "Helvetica Neue Light", sans-serif;
@@ -123,6 +123,8 @@ body{
   text-transform: uppercase;
   letter-spacing: .05em;
   transition: all 0.3s ease-in-out;
+  padding: 10px;
+  box-shadow: -1px 3px 4px 0px rgba(153,153,153,1);
 }
 
 .menu:hover .subMenu {

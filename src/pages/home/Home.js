@@ -19,6 +19,7 @@ const Home = () => {
             description={description} 
             image={demaquilante} 
             video={demaquilanteVideo}
+            goTo="demaquilante"
           />
         </section>
         <section id="sabonete">
@@ -28,6 +29,7 @@ const Home = () => {
             image={demaquilante} 
             video={sabonete}
             align="left"
+            goTo="sabonete"
           />
         </section>
     </div>

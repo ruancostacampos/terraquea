@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import ImageShower from '../../components/ImageShower/ImageShower'
 import styles from './Demaquilante.module.css'
 import ScaleY from '../../components/Animations/ScaleY'
@@ -7,8 +9,7 @@ const Demaquilante = () => {
 
     const images = ['https://images.pexels.com/photos/2183972/pexels-photo-2183972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                     'https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                    'https://images.pexels.com/photos/2920225/pexels-photo-2920225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                'http://localhost:3000/static/media/demaquilante.73d0ffbec291572e3a27.png']
+                    'https://images.pexels.com/photos/2920225/pexels-photo-2920225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1']
 
     return (
     
@@ -29,9 +30,11 @@ const Demaquilante = () => {
                 </div>
 
                 <div className={styles.divider}></div>
-                <div className={styles.centralize}>
-                    <button>Quero o meu!</button>
-                </div>
+                <div className={styles.centralizeButton}>
+                    <a href="https://api.whatsapp.com/send?phone=5577981032507&text=Ol%C3%A1%2C%20gostei%20do%20sabonete%20que%20vi%20no%20seu%20site%2C%20eu%20quero!" target='_blank'>
+                            <button>Eu quero!</button>
+                        </a>
+                    </div>
             </div>
 
             <ImageShower images={images}/>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import styles from './Product.module.css'
 
 
@@ -17,7 +19,9 @@ const Product = (props) => {
           <h2>{props.title}</h2>
           <div className={styles.divider}></div>
           <p>{props.description}</p>
-          <button>eu quero!</button>
+          <Link to={props.goTo}>
+              <button>Eu quero!</button>
+          </Link>
         </div>
   
       </div>
