@@ -1,5 +1,5 @@
 import ImageShower from '../../components/ImageShower/ImageShower'
-import styles from './Sabonete.module.css'
+import styles from '../demaquilante/Demaquilante.module.css'
 import ScaleY from '../../components/Animations/ScaleY'
 
 

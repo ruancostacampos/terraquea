@@ -29,8 +29,9 @@ const Demaquilante = () => {
                 </div>
 
                 <div className={styles.divider}></div>
-
-                <button>Quero o meu!</button>
+                <div className={styles.centralize}>
+                    <button>Quero o meu!</button>
+                </div>
             </div>
 
             <ImageShower images={images}/>

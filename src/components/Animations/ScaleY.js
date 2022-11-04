@@ -7,7 +7,11 @@ export const ScaleY = (props) => {
         initial={{scaleY: 0}}
         animate={{scaleY: 1}}
         transition={{duration: 0.3, type: 'spring'}}
-        style={{display: "flex", minHeight: "calc(100% - 162px)", alignItems: "center", justifyContent: "space-around"}}
+        style={{display: "flex", 
+                minHeight: "calc(100% - 162px)", 
+                alignItems: "center", 
+                justifyContent: "space-around",
+                maxWidth: 'calc(100vw - 20px)'}}
       >
     {props.children}
    </motion.div>

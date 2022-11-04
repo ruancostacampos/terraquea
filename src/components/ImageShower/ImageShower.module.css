@@ -5,6 +5,7 @@
     align-items: top;
     flex-direction: column;
     width: 100%;
+    max-width: 100vw;
 }
 
 @media screen and (min-width: 760px) {
@@ -36,6 +37,7 @@
 .miniatureContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -45,6 +47,7 @@
     border: solid 1px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    object-fit: cover;
 }
 
 .miniature:hover {
