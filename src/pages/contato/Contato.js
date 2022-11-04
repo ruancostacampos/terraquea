@@ -1,15 +1,11 @@
 import styles from './Contato.module.css'
 import { motion, AnimatePresence } from "framer-motion"
+import ScaleY from '../../components/Animations/ScaleY'
 
 const Contato = () => {
   return (
-  <AnimatePresence>
-    <motion.div
-        initial={{scaleY: 0}}
-        animate={{scaleY: 1}}
-        transition={{duration: 0.3, type: 'spring'}}
-        style={{display: "flex", minHeight: "calc(100% - 162px)", alignItems: "center", justifyContent: "space-around"}}
-      >
+  <ScaleY>
+
       <div className={styles.contatoContainer}>
         <div>
           <div className={styles.contatoTittle}>
@@ -40,8 +36,8 @@ const Contato = () => {
           </div>
         </div>
       </div>
-    </motion.div>
-  </AnimatePresence>
+
+  </ScaleY>
  
   
   )

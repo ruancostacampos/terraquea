@@ -1,7 +1,8 @@
 import styles from './Colage.module.css'
 
 import { useEffect, useState} from 'react'
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from 'framer-motion'
+import ScaleY from '../Animations/ScaleY'
 
 
 const Colage = (props) => {
@@ -45,11 +46,7 @@ const Colage = (props) => {
   }
 
   return (
-    <motion.div
-      initial={{scaleY: 0}}
-      animate={{scaleY: 1}}
-      transition={{duration: 0.3, type: 'spring'}}
-    >
+    <ScaleY>
       <div className={styles.collageContainer}>
         <div className={styles.textContainer}>
           <span> Meu título</span>
@@ -70,7 +67,7 @@ const Colage = (props) => {
           </AnimatePresence>
         </div>
       </div>
-    </motion.div>
+    </ScaleY>
   )
 }
 

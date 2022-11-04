@@ -13,7 +13,7 @@ const Footer = () => {
 
   const verifyContentSize = () => {
     
-    if (document.body.scrollHeight  > window.innerHeight) {
+    if (document.body.scrollHeight  > window.innerHeight - 70) {
       setLargeContent(true)
       console.log('entered if -> tamanho ' + document.body.scrollHeight)
     } else { 
@@ -60,9 +60,7 @@ const Footer = () => {
       
       <div className={styles.informationContainer}>
         <div className={styles.information}>
-            <p>Praça Monsenhor Honorato, BOX N°16</p>
-            <p> Centro / Poções - BA</p>
-            <p>(77)991882211</p>
+            <p>Praça Monsenhor Honorato, BOX N°16, Centro / Poções - BA</p>
         </div>
       </div>
       

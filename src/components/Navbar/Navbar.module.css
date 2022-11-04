@@ -25,6 +25,7 @@ body{
     gap: 42px;
 }
 
+
 .containerLinks a{
   color: var(--primary);
   font-family: "Helvetica Neue Light", sans-serif;
@@ -108,3 +109,35 @@ body{
   }
 }
 
+.subMenu{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgb(241, 241, 241);
+  gap: 5px;
+  color: var(--primary);
+  font-family: "Helvetica Neue Light", sans-serif;
+  font-size: 0.6rem;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu:hover .subMenu {
+  display: block;
+  animation: growDown 300ms ease-in-out forwards
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  80% {
+      transform: scaleY(1.1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}

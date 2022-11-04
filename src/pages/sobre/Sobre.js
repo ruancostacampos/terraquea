@@ -6,7 +6,8 @@ import img2 from '../../assets/images/natalia2.jpg'
 import img3 from '../../assets/images/natalia3.png'
 import img4 from '../../assets/images/natalia4.png'
 
-import { motion, AnimatePresence } from "framer-motion"
+import ScaleY from '../../components/Animations/ScaleY'
+
 
 
 const Sobre = () => {

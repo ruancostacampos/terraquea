@@ -10,7 +10,8 @@ import Home from './pages/home/Home'
 import Sobre from './pages/sobre/Sobre'
 import Contato from './pages/contato/Contato'
 import Footer from './components/Footer/Footer'
-import Detalhes from './pages/detalhes/Detalhes'
+import Demaquilante from './pages/demaquilante/Demaquilante'
+import Sabonete from './pages/sabonete/Sabonete'
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/sobre" element={<Sobre/>} />
             <Route path="/contato" element={<Contato/>} />
-            <Route path="/detalhes" element={<Detalhes/>} />
+            <Route path="/demaquilante" element={<Demaquilante/>} />
+            <Route path="/sabonete" element={<Sabonete/>} />
           </Routes>
         <Footer/>
       </BrowserRouter>

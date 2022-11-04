@@ -43,8 +43,12 @@ const toggleMenu = () => {
           <li>
             <Link to="/sobre">Sobre</Link>
           </li>
-          <li>
-            <Link to="/detalhes">Detalhes</Link>
+          <li className={styles.menu}>
+            <Link to="/demaquilante">Produtos</Link>
+            <div className={styles.subMenu}>
+              <Link to="/demaquilante">demaquilante</Link>
+              <Link to="/sabonete">sabonete</Link>
+            </div>
           </li>
         </ul>
       </nav>
