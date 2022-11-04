@@ -22,6 +22,12 @@ const Sidebar = (props) => {
           <li>
             <Link to="/contato">Contato</Link>
           </li>
+          <li>
+            <Link to="/demaquilante">Demaquilante</Link>
+          </li>
+          <li>
+            <Link to="/sabonete">Sabonete</Link>
+          </li>
         </ul>
       </nav>
     </div>
