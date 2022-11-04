@@ -13,21 +13,15 @@ const Colage = (props) => {
   // Faz a mudança de images durante um período de tempo
   useEffect( () => {
     //Delay para transição das imagens
-    setTimeout( () => {
-      
-      try{
-        
+    setTimeout( () => { 
         if(index < images.length - 1){
           setIndex(index + 1)
         }else{
           setIndex(0)
         }
-      
-      }catch(ex){}
-
     }, 4000) 
 
-  }, [index]) 
+  }, [index, images.length]) 
 
   // Cria as animações que serão usadas pelo motion img
   const variants = {
