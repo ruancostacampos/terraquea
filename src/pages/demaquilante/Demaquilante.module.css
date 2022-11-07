@@ -18,6 +18,7 @@
         flex-direction: column;
         width: 50%;
         max-width: 100vw;
+        padding-left: 20px;
     }
 
     .detalhesSubContainer h2{
@@ -46,7 +47,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--primary-more);
-    padding: 20px 50px 20px 50px;
+    padding: 15px 40px;
     border-color: var(--primary-more);
     border-width: 1px;
     cursor: pointer;
