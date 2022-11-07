@@ -8,7 +8,8 @@ export const ScaleY = (props) => {
         animate={{scaleY: 1}}
         transition={{duration: 0.3, type: 'spring'}}
         style={{display: "flex", 
-                minHeight: "calc(100% - 162px)", 
+                minHeight: props.minHeight || "calc(100% - 162px)", 
+                height: props.height || "auto",
                 alignItems: "center", 
                 justifyContent: "space-around"}}
       >

@@ -19,21 +19,27 @@
     
 }
 
-@media screen and (min-width: 1080px) {
 
+@media screen and (min-height: 768px) {
+/*  HD or MORE */
     .imageShower {
-        width: 50%;
-        max-height: 100%;
+        min-height: none !important;
     }
-    
+
+    .currentShowing {
+        height: auto !important;
+        max-height: 50vh;
+    }
+
 }
 
 .currentShowing {
-    min-height: 500px;
     max-width: 100%;
-    height: 50vh;
+   /* height: 50vh; */
+    height: 100%;
     margin-bottom: 20px;
     object-fit: contain;
+    min-height: 250px !important;
 }
 
 .miniatureContainer {
@@ -41,6 +47,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    padding-bottom: 10px;
 }
 
 .miniature {
