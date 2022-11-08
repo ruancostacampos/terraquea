@@ -35,7 +35,7 @@
 
 .currentShowing {
     max-width: 100%;
-   /* height: 50vh; */
+    aspect-ratio: 1/1;
     height: 100%;
     margin-bottom: 20px;
     object-fit: contain;
