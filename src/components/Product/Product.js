@@ -20,7 +20,7 @@ const Product = (props) => {
           <div className={styles.divider}></div>
           <p>{props.description}</p>
           <Link to={props.goTo}>
-              <button>Eu quero!</button>
+              <button>Detalhes</button>
           </Link>
         </div>
   

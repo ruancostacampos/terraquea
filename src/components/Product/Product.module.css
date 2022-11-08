@@ -1,6 +1,11 @@
 /* Para dispositivos que não são HD*/
 
 @media screen and (max-width: 1011px){
+
+  .container {
+    height: auto !important;
+  }
+
   video{
     display: none;
   }
