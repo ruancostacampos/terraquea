@@ -15,11 +15,7 @@ const Footer = () => {
     
     if (document.body.scrollHeight  > window.innerHeight - 70) {
       setLargeContent(true)
-      console.log('entered if -> tamanho ' + document.body.scrollHeight)
-    } else { 
-      setLargeContent(false)
-      console.log('entered else -> tamanho ' + document.body.scrollHeight)
-    }
+    } else {setLargeContent(false)}
 
   }
 
@@ -30,7 +26,6 @@ const Footer = () => {
     }, 30)
 
     window.addEventListener('resize', verifyContentSize)
-    console.log('i run')
 
   }, [location])
 
