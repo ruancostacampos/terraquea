@@ -93,6 +93,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--primary-more);
+    border-style: solid;
     padding: 20px 50px 20px 50px;
     border-color: var(--primary-more);
     border-width: 1px;
