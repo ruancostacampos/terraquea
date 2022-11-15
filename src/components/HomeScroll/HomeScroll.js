@@ -7,7 +7,7 @@ const HomeScroll = () => {
   const [isAtEnd, setIsAtEnd] = useState(false)
 
   const handleButton = () => {
-    window.location.href = getCurrentScroll()
+    window.location.href = getCurrentScroll() || window.location.href
   }
 
   window.onscroll = () => {
@@ -39,7 +39,8 @@ const HomeScroll = () => {
 
     if( section >= 2.039 && section < 4 ){
       setIsAtEnd(false)
-      return "#navbar"
+      window.scrollTo({ top: 0, behavior: "smooth" })
+      return null
     }
     
   }

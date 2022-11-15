@@ -20,29 +20,29 @@ const HomeIntro = () => {
     <div className={styles.infoContainer}>
       <div className={styles.infoProduct}>
         
-        <LeftToRight delay={1} duration={0.7}>
+        <LeftToRight delay={1} duration={0.4}>
           <h1>Terraquea</h1>
         </LeftToRight>
 
-        <LeftToRight delay={1.7} duration={0.7}>
+        <LeftToRight delay={1.4} duration={0.4}>
           <h2>Nutra <br></br>teus sentidos</h2>
         </LeftToRight>
 
-        <LeftToRight delay={2.4} duration={0.7}>
+        <LeftToRight delay={1.8} duration={0.4}>
         <p>Produtos que aproveitam o poder do 100% natural.</p>
         </LeftToRight>
 
-        {landscape && <ScaleX delay={2.4} duration={0.7}>
+        {landscape && <ScaleX delay={2.2} duration={0.4}>
           <div className={styles.divider}></div>
         </ScaleX>}
 
         <div className={styles.description}>
 
-        <LeftToRight delay={3.0} duration={0.7}>
+        <LeftToRight delay={2.6} duration={0.4}>
           <p>Para todo tipo de pele.</p>
         </LeftToRight>
 
-        <LeftToRight delay={3.7} duration={0.7} invert={true}>
+        <LeftToRight delay={3.0} duration={0.4} invert={true}>
           <p>Hidrata e trata.</p>
         </LeftToRight>
 

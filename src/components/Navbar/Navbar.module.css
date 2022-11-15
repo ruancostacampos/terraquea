@@ -13,16 +13,17 @@ body{
 }
 
 .containerLinks{
-  padding: 0 20px 0 54px;
+  width: 100%;
 }
 
 .containerLinks ul{
-    width: 100%;
+    width: calc(100% - 170);
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 42px;
+    margin-right: 170px;
 }
 
 
@@ -124,7 +125,7 @@ body{
   letter-spacing: .05em;
   transition: all 0.3s ease-in-out;
   padding: 10px;
-  box-shadow: -1px 3px 4px 0px rgba(153,153,153,1);
+  box-shadow: -1px 3px 6px 0px rgba(153,153,153,1);
 }
 
 .menu:hover .subMenu {

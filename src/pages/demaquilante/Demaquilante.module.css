@@ -51,7 +51,7 @@
     border-color: var(--primary-more);
     border-width: 1px;
     cursor: pointer;
-    transition: background-color  0.5s;
+    transition: all  0.4s;
     max-width: 80%;
 }
 
